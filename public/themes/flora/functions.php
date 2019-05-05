@@ -32,6 +32,9 @@ add_action('after_setup_theme', function () {
     ]);
 });
 
+// Register flora custom post type.
+require get_template_directory().'/post-types/flora.php';
+
 // Enqueue and register scripts the right way.
 add_action('wp_enqueue_scripts', function () {
     wp_deregister_script('jquery');
