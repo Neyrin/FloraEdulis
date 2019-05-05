@@ -35,9 +35,12 @@ add_action('after_setup_theme', function () {
 // Register flora custom post type.
 require get_template_directory().'/post-types/flora.php';
 
-// Register skill taxonomy for the student custom post type.
+// Register taxonomies for the flora custom post type.
 require get_template_directory().'/taxonomies/plant_categories.php';
 require get_template_directory().'/taxonomies/plant_flavours.php';
+
+// Register ac-fields 
+require get_template_directory().'/custom-fields/plants-acf.php';
 
 // Enqueue and register scripts the right way.
 add_action('wp_enqueue_scripts', function () {
