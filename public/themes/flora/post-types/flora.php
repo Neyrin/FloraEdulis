@@ -17,7 +17,7 @@ add_action('init', function () {
             'thumbnail',
             'excerpt',
         ],
-        'menu_icon' => 'dashicons-',
+        'menu_icon' => 'dashicons-carrot',
         'menu_position' => 20,
         'public' => true,
     ]);
