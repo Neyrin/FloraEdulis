@@ -31,8 +31,9 @@ get_header(); ?>
             <ul>
                 <?php foreach ($plants as $plant): ?>
                     <li class="mb-2">
-                        <a href="<?php the_permalink($plant); ?>"><?php echo $plant->post_title; ?></a>
+                        <a href="<?php the_permalink($plant); ?>"><h2><?php echo $plant->post_title; ?></h2></a>
                         <p><?php echo $plant->post_excerpt; ?></p>
+                        <a href="<?php the_permalink($plant); ?>" class="button">To the article</a>
                         
                     </li>
                 <?php endforeach; ?>
