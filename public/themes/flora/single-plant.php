@@ -10,7 +10,7 @@
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
 
-                <h2><?php the_field('plant_author'); ?></h2>
+                <h2><?php the_field('author'); ?></h2>
                 <div style="background-color:<?php the_field('plant_color'); ?>">Something here...</div>
                 <h2><?php the_field('latin_name'); ?></h2>
 
