@@ -11,7 +11,7 @@ add_action('after_setup_theme', function () {
     show_admin_bar(false);
 
     // Add post thumbnails support.
-    add_theme_support('post-thumbnails');
+    add_theme_support('post-thumbnails', array( 'post', 'page', 'plants' ));
 
     // Add soil support
     add_theme_support('soil-clean-up');
