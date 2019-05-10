@@ -13,4 +13,7 @@
         <nav role="navigation">
             <?php wp_nav_menu(['theme_location' => 'primary-menu']); ?>
         </nav>
+        <div class="header-content">
+            <h2 class="header-title">Flora Edulis</h2>
+        </div>
     </header>
